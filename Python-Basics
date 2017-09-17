@@ -1,0 +1,33 @@
+#1.Python Program to Calculate the Average of Numbers in a Given List
+
+n = int(input("Enter the number of elements: "))
+arr = []
+for i in range(0,n):
+    a = int(input("Enter the %d element: " %i))
+    arr.append(a)
+avg = sum(arr)/n
+print("Average of items in the list",round(avg,2))
+
+
+#2.Python Program to Exchange the Values of Two Numbers Without Using a Temporary Variable
+#My way of doing it!
+a = [1]
+b = [6]
+print("The value of a is: ")
+print(a)
+print("The value of b is: ")
+print(b)
+a[0] = 6
+b[0] = 1
+print("The value of a is: ")
+print(a)
+print("The value of b is: ")
+print(b)
+
+#optimum solution!
+a = int(input("Enter the value of first variable: "))
+b = int(input("Enter the value of second variable: "))
+a = a + b
+b = a - b
+a = a - b
+print("a is:",a, " b is:",b)

@@ -1,5 +1,4 @@
 #1.Python Program to Calculate the Average of Numbers in a Given List
-
 n = int(input("Enter the number of elements: "))
 arr = []
 for i in range(0,n):

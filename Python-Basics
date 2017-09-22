@@ -1,4 +1,6 @@
-#1.Python Program to Calculate the Average of Numbers in a Given List
+#SIMPLE PYTHON PROGRAMS:
+
+1.Python Program to Calculate the Average of Numbers in a Given List
 n = int(input("Enter the number of elements: "))
 arr = []
 for i in range(0,n):
@@ -7,9 +9,8 @@ for i in range(0,n):
 avg = sum(arr)/n
 print("Average of items in the list",round(avg,2))
 
-
-#2.Python Program to Exchange the Values of Two Numbers Without Using a Temporary Variable
-#My way of doing it!
+2.Python Program to Exchange the Values of Two Numbers Without Using a Temporary Variable
+My way of doing it!
 a = [1]
 b = [6]
 print("The value of a is: ")
@@ -23,10 +24,724 @@ print(a)
 print("The value of b is: ")
 print(b)
 
-#optimum solution!
+optimum solution!
 a = int(input("Enter the value of first variable: "))
 b = int(input("Enter the value of second variable: "))
 a = a + b
 b = a - b
 a = a - b
 print("a is:",a, " b is:",b)
+
+3.Python Program to Read a Number n and Compute n+nn+nnn
+a = input("Enter the number n: ")
+x = str(a)
+y = x + x
+z = x + x +x
+Final = a + int(y) + int(z)
+print("The value of n,nn,nnn and the value of n+nn+nnnn", x,y,z,Final)
+
+4.Python program to reverse a given number
+n = int(input("Enter the number to be reversed: "))
+rev=0
+while(n>0):
+    dig=n%10
+    rev=rev*10+dig
+    n=n//10
+print("Reverse of the number:",rev)
+
+5.Python program to check whether a number is positive or negative
+n = int(input("Enter the number to be checked for negative or positive: "))
+if(n > 0):
+    print("Number is positive")
+elif(n == 0):
+    print("Number is neither positive nor negative")
+else:
+    print("Number is negative")
+
+
+6. Python Program to Take in the Marks of 5 Subjects and Display the Grade.
+sub1 = int(input("Enter the marks of subject 1: "))
+sub2 = int(input("Enter the marks of subject 2: "))
+sub3 = int(input("Enter the marks of subject 3: "))
+sub4 = int(input("Enter the marks of subject 4: "))
+sub5 = int(input("Enter the marks of subject 5: "))
+avg = (sub1 + sub2 + sub3 + sub4 + sub5)/5
+if(avg >= 90):
+    print("Grade: A")
+elif(avg >= 80 & avg < 90):
+    print("Grade: B")
+elif(avg >= 70 & avg <80):
+    print("Grade: C")
+elif(avg >= 60 & avg < 70):
+    print("Grade: D")
+else:
+    print("Grade: F")
+
+
+7. Python Program to Print all Numbers in a Range Divisible by a Given Number
+lower = int(input("Enter the lower limit: "))
+upper = int(input("Enter the upper limit: "))
+n = int(input("Enter the number for divisibility check: "))
+for i in range(lower,upper + 1):
+    if(i%n == 0):
+        print("%d is divisible by %d" % (i,n))
+
+
+8. Python Program to Read Two Numbers and Print Their Quotient and Remainder.
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+q = a // b
+r = a % b
+print("Quotient is: %d" % q)
+print("Remainder is: %d" % r)
+
+
+9. Python Program to Accept Three Digits and Print all Possible Combinations from the Digits.
+a = int(input("Enter the first digit: "))
+b = int(input("Enter the second digit: "))
+c = int(input("Enter the third digit: "))
+d = []
+d.append(a)
+d.append(b)
+d.append(c)
+for i in range(0,3):
+    for j in range(0,3):
+        for k in range(0,3):
+            if(i!=j&j!=k&k!=i):
+                print(d[i],d[j],d[k])
+            
+
+10. Python Program to Print Odd Numbers Within a Given Range.
+lower = int(input("Enter the lower limit: "))
+upper = int(input("Enter the upper limit: "))
+for i in range(lower,upper + 1):
+    if(i % 2 != 0):
+        print("The number %d is odd" % i)
+    
+
+11. Python Program to Find the Sum of Digits in a Number.
+n = int(input("Enter the number: "))
+s = 0
+while(n > 0):
+    digit = n % 10
+    s = s + digit
+    n = n//10
+print(s)    
+    
+
+12. Python Program to Find the Smallest Divisor of an Integer.
+n = int(input("Enter the integer: "))
+d = []
+for i in range(2,n+1):
+    if(n % i == 0):
+        d.append(i)
+d.sort()
+print("Smallest divisor is: %d" %d[0])
+
+
+13. Python Program to Count the Number of Digits in a Number.
+n = int(input("Enter the number: "))
+count = 0
+while(n > 0):
+    count = count + 1
+    n = n // 10
+print("The length of the number is: %d" %count)
+
+
+14. Python Program to Check if a Number is a Palindrome.
+n = int(input("Enter the number to be reversed: "))
+a = n
+rev=0
+while(n>0):
+    dig=n%10
+    rev=rev*10+dig
+    n=n//10
+    
+if(a == rev):
+    print("The number is a palindrome")
+else:
+    print("The number is not a palindrome")
+
+
+15.Python Program to Print all Integers that are not divisible by either 2 or 3 and lie between 1 and 50.
+lower = 1
+upper = 50
+for i in range(lower,upper + 1):
+    if(i%2!=0&i%3!=0):
+        print(i)
+
+for i in range(0,51):
+    if(i % 2 != 0 & i % 3 != 0):
+        print(i)
+
+
+16. Python Program to Read a Number n And Print the Series 1+2+3+...+n=
+n=int(input("Enter a number: "))
+for j in range(1,n+1):
+    a=[]
+    for i in range(1,j+1):
+        print(i)
+        if(i<j):
+            print("+")
+        a.append(i)
+    print("=",sum(a))
+ 
+print()
+
+#PROGRAMS ON MATHEMATICAL FUNCTIONS:
+
+1.Python Program to Check if a Date is Valid and Print the Incremented Date if it is.
+date=input("Enter the date: ")
+dd,mm,yy=date.split('/')
+dd=int(dd)
+mm=int(mm)
+yy=int(yy)
+if(mm == 1 or mm == 3 or mm == 5 or mm == 7 or mm == 8 or mm == 10 or mm == 12):
+    maxdays = 31
+elif(mm == 4 or mm == 6 or mm == 9 or mm == 11):
+    maxdays = 30
+elif(yy%4 == 0 and yy % 100 != 0 or yy % 400 == 0):
+    maxdays = 29
+else:
+    maxdays = 28
+if(mm < 1 or mm > 12):
+    print("Date is invalid.")
+elif(dd < 1 or dd > maxdays):
+    print("Date is invalid.")
+elif(dd == maxdays and mm != 12):
+    dd = 1
+    mm = mm + 1
+    print("The incremented date is: ",dd,mm,yy)
+elif(dd == 31 and mm == 12):
+    dd = 1
+    mm = 1
+    yy = yy + 1
+    print("The incremented date is: %d/%d/%d" %(dd,mm,yy))
+else:
+    dd=dd+1
+    print("The incremented date is: %d/%d/%d" %(dd,mm,yy))
+
+
+2.Python Program to Compute Simple Interest Given all the Required Values.
+Principal = float(input("Enter the principal amount: "))
+Rate = float(input("Enter the interest rate: "))
+Time = int(input("Enter the period in years: "))
+Simple_Interest = (Principal * Rate * Time)/100
+print("The simple interest for %.2f in %d years at an interest of %.2f is: %.2f" %(Principal,Time,Rate,Simple_Interest))
+
+
+3.Python Program to Check Whether a Given Year is a Leap Year.
+year = int(input("Enter the year: "))
+if(year % 4 == 0 and year % 100 != 0 or year % 400 == 0):
+    print("The year %d is a leap year" %year)
+else:
+    print("The year %d is not a leap year" %year)
+
+Leap Year Rules:
+1. Add an extra day every 4 years
+2. Skip if its a new century
+3. Unless the century is divisible by 400.
+
+4.Python Program to Read Height in Centimeters and then Convert the Height to Feet and Inches
+Hcms = float(input("Enter the height in cms: "))
+Hfeet = Hcms/30.48
+Hinches = Hcms/2.54
+print("Height of %.2f cms in feet is: %.2f" %(Hcms,Hfeet))
+print("Height of %.2f cms in inches is: %.2f" %(Hcms,Hinches))
+
+
+5.Python Program to Take the Temperature in Celcius and Covert it to Fahrenheit
+celsius = int(input("Enter the temperature in celsius: "))
+f = (celsius * 1.8) + 32
+print("The temperature in fahrenhiet is: %d" %f)
+
+
+6.Python Program to Compute Prime Factors of an Integer.
+n = int(input("Enter the number: "))
+i = 1
+while(i <= n):
+    prime_factor_count = 0
+    if(n % i == 0):
+        factor_count = 1
+        while(factor_count <= i):
+            if(i % factor_count == 0):
+                prime_factor_count = prime_factor_count + 1
+            factor_count = factor_count + 1
+        if(prime_factor_count == 2):
+                print(i)
+    i = i + 1
+
+
+7.Python Program to Generate all the Divisors of an Integer
+n = int(input("Enter the integer: "))
+i = 1
+while(i <= n):
+    if(n % i == 0):
+        print(i)
+    i = i + 1    
+    
+
+8.Python Program to Print Table of a Given Number
+n = int(input("Enter the number: "))
+for i in range(1,11):
+    k = n * i
+    print("%d * %d = %d" %(n,i,k))
+    
+
+9.Python Program to Print Sum of Negative Numbers, Positive Even Numbers and Positive Odd numbers in a List.
+n = int(input("Enter the number of elements to be in the list: "))
+b = []
+for i in range(0,n):
+    a = int(input("Element: "))
+    b.append(a)
+sum_pos_even = 0
+sum_pos_odd = 0
+sum_negative = 0
+for j in b:
+    if(j > 0):
+        if(j % 2 == 0):
+            sum_pos_even = sum_pos_even + j
+        else:
+            sum_pos_odd = sum_pos_odd + j
+    else:
+        sum_negative = sum_negative + j
+print("The sum of positive even numbers is: %d" % sum_pos_even)
+print("The sum of positive odd numbers is: %d" % sum_pos_odd)
+print("The sum of negative numbers is: %d" % sum_negative)
+
+
+10.Python Program to Print Largest Even and Largest Odd Number in a List.
+n = int(input("Enter the number of elements in the list: "))
+b = []
+for i in range(0,n):
+    a = int(input("Element: "))
+    b.append(a)
+c = []
+d = []
+for i in b:
+    if(i % 2 == 0):
+        c.append(i)
+    else:
+        d.append(i)
+c.sort()
+d.sort()
+count_even = 0
+count_odd = 0
+for k in c:
+    count_even = count_even + 1
+for m in d:
+    count_odd = count_odd + 1
+print("Largest even number: %d" % c[count_even - 1])
+print("Largest odd number: %d" % d[count_odd - 1])
+
+
+11.Python program to  form an integer that has the number of digits at tens place and the least significant digit of the entered integer  at ones place.
+n = int(input("Enter the integer: "))
+tmp = n
+k = 0
+while(n > 0):
+    k = k + 1
+    n = n // 10
+b = str(tmp)
+c = str(k)
+d = c + b[k - 1]
+print("The new number formed: %s" % d)
+
+
+12.Python Program to Find Those Numbers which are Divisible by 7 and Multiple of 5 in a Given Range of Numbers.
+n = int(input("Enter the number of integers: "))
+a = []
+for i in range(0,n):
+    b = int(input("Integers: "))
+    a.append(b)
+print(a)
+for j in a:
+    if(j % 7 == 0):
+        if(j % 5 == 0):
+            print("%d is divisible by 7 and multiple of 5" %j)
+            
+
+13.Python Program to Check if a Number is an Armstrong Number.
+n = int(input("Enter the number to be checked for Armstrong number or not: "))
+a = list(map(int,str(n)))
+b = list(map(lambda x:x**3,a))
+if(sum(b) == n):
+    print("The number is an armstrong number")
+else:
+    print("The number is not an armstrong number")
+
+
+14.Python Program to Print the Pascal's triangle for n number of rows given by the user
+from __future__ import print_function
+n=int(input("Enter number of rows: "))
+a=[]
+for i in range(n):
+    a.append([])
+    a[i].append(1)
+    for j in range(1,i):
+        a[i].append(a[i-1][j-1]+a[i-1][j])
+    if(n!=0):
+        a[i].append(1)
+for i in range(n):
+    print("   "*(n-i),end=" ",sep=" ")
+    for j in range(0,i+1):
+        print('{0:6}'.format(a[i][j]),end=" ",sep=" ")
+    print()
+
+
+15.Python Program to Check if a Number is a Perfect Number (Perfect number, a positive integer that is equal to the sum of its proper divisors).
+n = int(input("Enter the number: "))
+sum_div = 0
+for i in range(1,n):
+    if(n % i == 0):
+        sum_div = sum_div + i
+if(sum_div == n):
+    print("The number is a perfect number")
+else:
+    print("The number is not a perfect number")
+
+
+16.Python Program to Check if a Number is a Strong Number (Strong numbers are the numbers whose sum of factorial of digits is equal to the original number.)
+n = int(input("Enter the number: "))
+temp = n
+sum_fac = 0
+while(n):
+    i = 1
+    f = 1
+    r = n % 10
+    while(i <= r):
+        f  = f * i
+        i = i + 1
+    sum_fac = sum_fac + f
+    n = n // 10
+if(sum_fac == temp):
+    print("The number is a strong number")
+else:
+    print("The number is not a strong number")
+
+
+17.Python Program to Find the LCM of Two Numbers.
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+if(a > b):
+    min1 = a
+else:
+    min1 = b
+while(1):
+    if(min1 % a == 0 and min1 % b == 0):
+        print("LCM is: %d" % min1)
+        break
+    min1 = min1 + 1
+
+
+18.Python Program to Find the GCD of Two Numbers.
+import fractions
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+print("The GCD of two numbers is: %d" % fractions.gcd(a,b))
+
+
+19.Python Program to Compute a Polynomial Equation given that the Coefficients of the Polynomial are stored in a List.
+import math
+print("Enter the coefficients of the form ax^3 + bx^2 + cx + d")
+lst = []
+for i in range(0,4):
+    a = int(input("Enter coefficient: "))
+    lst.append(a)
+x = int(input("Enter the value of x: "))
+sum1 = 0
+j = 3
+for i in range(0,3):
+    while(j > 0):
+        sum1 = sum1 + (lst[i]*math.pow(x,j))
+        break
+    j = j -1
+sum1 = sum1 + lst[3]
+print("The value of polynomial is: %d" % sum1)
+
+
+20.Python program to reverse a string.
+while True:
+    print("Enter 'x' for exit: ")
+    string = str(input("Enter any string: "))
+    if(string == 'x'):
+        break
+    else:
+        revstring = string[::-1]
+        print("Reverse String = %s" % revstring)
+
+
+21.Python Program to Check If Two Numbers are Amicable Numbers (sum of the proper divisors is equal to the opposite numbers.)
+x = int(input("Enter the first number: "))
+y = int(input("Enter the second number: "))
+sum_x = 0
+sum_y = 0
+for i in range(1,x):
+    if(x % i == 0):
+        sum_x = sum_x + i
+for j in range(1,y):
+    if(y % j == 0):
+        sum_y = sum_y + j
+if(sum_x == y and sum_y == x):
+    print("Amicable numbers!")
+else:
+    print("Not amicable numbers!")
+
+
+
+22.Python Program to Find the Area of a Triangle Given All Three Sides.
+import math
+print("Area of a triangle")
+a = float(input("Enter the first side: "))
+b = float(input("Enter the second side: "))
+c = float(input("Enter the third side: "))    
+s = (a + b + c)/2
+print(s)
+area = math.sqrt(s*(s-a)*(s-b)*(s-c))
+print("Area of triangle is: %.2f" % round(area,2))
+
+
+23.Python Program to Find the Gravitational Force Acting Between Two Objects.
+m1 = float(input("Enter the first mass: "))
+m2 = float(input("Enter the seoond mass: "))
+r = float(input("Enter the distance between the centre of masses: "))
+G = 6.673*(10**-11)
+f = (G*m1*m2)/(r**2)
+print("The gravitational force is: %.2f N" %f)
+
+
+24.Python Program to Check if a Number is a Prime Number.
+n = int(input("Enter the number: "))
+count_div = 0
+for i in range(1,n+1):
+    if(n % i == 0):
+        count_div = count_div + 1
+if(count_div == 2):
+    print("The number is prime")
+else:
+    print("The number is not prime")
+
+
+25.Python Program to Print all the Prime Numbers within a Given Range.
+upper = int(input("Enter the upper limit: "))
+for a in range(2,upper + 1):
+    k = 0
+    for i in range(2,a//2):
+        if(a % i == 0):
+            k = k + 1
+    if(k <= 0):
+        print(a)
+
+
+26.Python Program to Print Numbers in a Range (1,upper) Without Using any Loops.
+def printnumber(upper):
+    if(upper > 0):
+        printnumber(upper - 1)
+        print(upper)
+upper = int(input("Enter upper limit: "))
+printnumber(upper)
+
+
+
+27.Python Program to Find the Sum of first N natural numbers.
+n = int(input("Enter the number: "))
+sum1 = 0
+while(n > 0):
+    sum1 = sum1 + n
+    n = n - 1
+print("The sum of first %d natural numbers is: %d" %(n,sum1))
+
+
+28.Python program to find the second largest in a set of numbers.
+n = int(input("Enter the number of integers: "))
+a = []
+for i in range(0,n):
+    b = int(input("Enter the elements: "))
+    a.append(b)
+print(a)
+a.sort()
+print(a)
+print("Second largest in the list is: %d" %a[n - 2])
+
+
+#PYTHON STRING HANDLING:
+
+1.Python Program to Replace all Occurrences of 'a' with $ in a String
+string = raw_input("Enter a string: ")
+string = string.replace('a','$')
+string = string.replace('A','$')
+print("Modified String: ")
+print(string)
+
+2.Python Program to Remove the nth Index Character from a Non-Empty String.
+def remove(string,n):
+    first = string[:n]
+    last = string[n+1:]
+    return(first+last)
+
+string = raw_input("Enter the string: ")
+n = int(input("Enter the index of the character to remove: "))
+print("Modified String: ")
+print(remove(string,n))
+
+
+3.Python Program to Detect if Two Strings are Anagrams(word, phrase, or sentence formed from another by rearranging its letters).
+s1 = raw_input("Enter the first string: ")
+s2 = raw_input("Enter the second string: ")
+if(sorted(s1) == sorted(s2)):
+    print("The strings are anagrams")
+else:
+    print("The strings are not anagrams")
+
+
+4.Python Program to reverse a string.
+string = raw_input("Enter the string: ")
+a = string[::-1]
+print(a)
+
+
+4.Python Program to Form a New String where the First Character and the Last Character have been Exchanged.
+def change(string):
+    return(string[-1:] + string[1:-1] + string[:1])
+string = raw_input("Enter the string: ")
+print("Modified String: ")
+print(change(string))
+
+
+5.Python Program to Count the Number of Vowels in a String.
+string = raw_input("Enter the string: ")
+vowels=0
+for i in string:
+      if(i=='a' or i=='e' or i=='i' or i=='o' or i=='u' or i=='A' or i=='E' or i=='I' or i=='O' or i=='U'):
+            vowels=vowels+1
+print("Number of vowels are:")
+print(vowels)
+
+
+6.Python Program to Take in a String and Replace Every Blank Space with Hyphen
+string = raw_input("Enter the string: ")
+string = string.replace(' ','-')
+print("Modified String: ")
+print(string)
+
+
+7.Python Program to Calculate the Length of a String Without Using a Library Function
+string = raw_input("Enter the string: ")
+count = 0
+for i in string:
+    count = count + 1
+print(count)
+
+
+8.Python Program to Remove the Characters of Odd Index Values in a String
+def modify(string):
+    final = ""
+    for i in range(len(string)):
+        if(i % 2 == 0):
+            final = final + string[i]
+    return final
+string = raw_input("Enter the string: ")
+print("Modified String: ")
+print(modify(string))
+
+
+#OTHER PROGRAMS:
+
+1.Python Program to Find the Largest Number in a List.
+n = int(input("Enter the number of elements: "))
+a = []
+for i in range(1,n+1):
+    b = int(input("Enter the element: "))
+    a.append(b)
+a.sort()
+print("Largest element is: %d" %a[n-1])
+
+2.Python Program to Put Even and Odd elements in a List into Two Different Lists.
+n = int(input("Enter the number of elements: "))
+even = []
+odd = []
+for i in range(1,n+1):
+    b = int(input("Enter the element: "))
+    if(b % 2 == 0):
+        even.append(b)
+    else:
+        odd.append(b)
+print("The even elements are: %s" %even)
+print("The odd elements are %s" %odd)
+        
+    
+3.Python Program to Merge Two Lists and Sort it
+n1 = int(input("Enter the number of elements: "))
+a = []
+b = []
+for i in range(1,n1+1):
+    c = int(input("Enter the element: "))
+    a.append(c)
+n2 = int(input("Enter the number of elements: "))
+for i in range(1,n2+1):
+    d = int(input("Enter the element: "))
+    b.append(d)
+new = a +  b
+new.sort()
+print("The sorted list is: %s" %new)
+
+
+
+4.Python Program to Add a Key-Value Pair to the Dictionary
+key = int(input("Enter the key(int) to be added: "))
+value = int(input("Enter the value for the key to be added: "))
+d = {}
+d.update({key : value})
+print("updated dictionary is: ")
+print(d)
+
+
+5.Python Program to Check if a Given Key Exists in a Dictionary or Not
+d = {'A':1,'B':2,'C':3}
+key = raw_input("Enter key to check: ")
+if key in d.keys():
+    print("Key is present and value of key is: ")
+    print(d[key])
+else:
+    print("Key is not present")
+
+
+6.Python Program to Count the Number of Vowels Present in a String using Sets.
+string = raw_input("Enter the string: ")
+count = 0
+vowels = set("aeiouAEIOU")
+for letter in string:
+    if letter in vowels:
+        count = count + 1
+print("Count of vowels is: %s" %count)
+
+
+7.Python Program that Displays which Letters are Present in Both the Strings using sets.
+s1 = raw_input("Enter the first string: ")
+s2 = raw_input("Enter the second string: ")
+a = list(set(s1)|set(s2))
+print(a)
+
+
+8.Python Program to Determine Whether a Given Number is Even or Odd Recursively
+def check(n):
+    if (n < 2):
+        return (n % 2 == 0)
+    return (check(n - 2))
+n=int(input("Enter number:"))
+if(check(n)==True):
+      print("Number is even!")
+else:
+      print("Number is odd!")
+
+
+9.Python program to reverse a string using recursion:
+def reverse(string):
+    if(len(string) == 0):
+        return string
+    else:
+        return(reverse(string[1:]) + string[0])
+a = str(input("Enter the string to be reversed: "))
+print(reverse(a))
+
+

@@ -1,0 +1,1351 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PMML 
+	 version="4.3"
+	 xmlns="http://www.dmg.org/PMML-4_3"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://www.dmg.org/PMML-4_3 pmml-4-3.xsd">
+	<Header 
+		 copyright="Copyright (c) IBM Corp. 1989, 2017.">
+		<Application  name="IBM SPSS Statistics"  version="25.0.0.0" />
+	</Header>
+	<DataDictionary 
+		 numberOfFields="24">
+		<DataField 
+			 name="CREDIT"
+			 displayName="Credit Rating"
+			 optype="categorical"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+			<Value  value="0"  displayValue="BAD"  property="valid" />
+			<Value  value="1"  displayValue="GOOD"  property="valid" />
+		</DataField>
+		<DataField 
+			 name="CHK_ACCT"
+			 displayName="Checking Account Status"
+			 optype="categorical"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+			<Value  value="0"  displayValue="LT 0 DM"  property="valid" />
+			<Value  value="1"  displayValue="0 to 200 DM"  property="valid" />
+			<Value  value="2"  displayValue="GT 200 DM"  property="valid" />
+			<Value  value="3"  displayValue="NONE"  property="valid" />
+		</DataField>
+		<DataField 
+			 name="HISTORY"
+			 displayName="Credit History"
+			 optype="categorical"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+			<Value  value="0"  displayValue="NONE TAKEN"  property="valid" />
+			<Value  value="1"  displayValue="ALL CREDITS PAID BACK"  property="valid" />
+			<Value  value="2"  displayValue="EXISTING CREDITS PAID BACK"  property="valid" />
+			<Value  value="3"  displayValue="DELAY IN PAST"  property="valid" />
+			<Value  value="4"  displayValue="CRITICAL ACCOUNT"  property="valid" />
+		</DataField>
+		<DataField 
+			 name="CREDIT_USE"
+			 displayName="Credit Use"
+			 optype="categorical"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+			<Value  value="0"  displayValue="OTHER"  property="valid" />
+			<Value  value="1"  displayValue="NEW CAR"  property="valid" />
+			<Value  value="2"  displayValue="USED CAR"  property="valid" />
+			<Value  value="3"  displayValue="FURNITURE"  property="valid" />
+			<Value  value="4"  displayValue="ELECTRONICS"  property="valid" />
+			<Value  value="5"  displayValue="EDUCATION"  property="valid" />
+			<Value  value="6"  displayValue="RETRAINING"  property="valid" />
+		</DataField>
+		<DataField 
+			 name="NEW_CAR"
+			 displayName="Credit for New Car"
+			 optype="categorical"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+			<Value  value="0"  displayValue="NO"  property="valid" />
+			<Value  value="1"  displayValue="YES"  property="valid" />
+		</DataField>
+		<DataField 
+			 name="USED_CAR"
+			 displayName="Credit for Used Car"
+			 optype="categorical"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+			<Value  value="0"  displayValue="NO"  property="valid" />
+			<Value  value="1"  displayValue="YES"  property="valid" />
+		</DataField>
+		<DataField 
+			 name="FURNITURE"
+			 displayName="Credit for Furniture"
+			 optype="categorical"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+			<Value  value="0"  displayValue="NO"  property="valid" />
+			<Value  value="1"  displayValue="YES"  property="valid" />
+		</DataField>
+		<DataField 
+			 name="RADIOTV"
+			 displayName="Credit for Electronics"
+			 optype="categorical"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+			<Value  value="0"  displayValue="NO"  property="valid" />
+			<Value  value="1"  displayValue="YES"  property="valid" />
+		</DataField>
+		<DataField 
+			 name="EDUCATION"
+			 displayName="Credit for Education"
+			 optype="categorical"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+			<Value  value="0"  displayValue="NO"  property="valid" />
+			<Value  value="1"  displayValue="YES"  property="valid" />
+		</DataField>
+		<DataField 
+			 name="RETRAINING"
+			 displayName="Credit for Retraining"
+			 optype="categorical"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+			<Value  value="0"  displayValue="NO"  property="valid" />
+			<Value  value="1"  displayValue="YES"  property="valid" />
+		</DataField>
+		<DataField 
+			 name="SAV_ACCT"
+			 displayName="Savings Account Average Balance"
+			 optype="categorical"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+			<Value  value="0"  displayValue="LT 100 DM"  property="valid" />
+			<Value  value="1"  displayValue="100 to 500 DM"  property="valid" />
+			<Value  value="2"  displayValue="500 to 1000 DM"  property="valid" />
+			<Value  value="3"  displayValue="GT 1000 DM"  property="valid" />
+			<Value  value="4"  displayValue="UNKNOWN/NONE"  property="valid" />
+		</DataField>
+		<DataField 
+			 name="EMPLOYMENT"
+			 displayName="Years with Current Employer"
+			 optype="categorical"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+			<Value  value="0"  displayValue="UNEMPLOYED"  property="valid" />
+			<Value  value="1"  displayValue="LT 1 YR"  property="valid" />
+			<Value  value="2"  displayValue="1 to 4 YRS"  property="valid" />
+			<Value  value="3"  displayValue="4 to 7 YRS"  property="valid" />
+			<Value  value="4"  displayValue="GT 7 YRS"  property="valid" />
+		</DataField>
+		<DataField 
+			 name="PRESENT_RESIDENT"
+			 displayName="Years as Resident"
+			 optype="categorical"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+			<Value  value="1"  displayValue="1 to 2 YRS"  property="valid" />
+			<Value  value="2"  displayValue="2 to 3 YRS"  property="valid" />
+			<Value  value="3"  displayValue="GT 4 YRS"  property="valid" />
+			<Value  value="4"  displayValue="4"  property="valid" />
+		</DataField>
+		<DataField 
+			 name="REAL_ESTATE"
+			 displayName="Owns Real Estate"
+			 optype="categorical"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+			<Value  value="0"  displayValue="NO"  property="valid" />
+			<Value  value="1"  displayValue="YES"  property="valid" />
+		</DataField>
+		<DataField 
+			 name="PROP_UNKN_NONE"
+			 displayName="Owns No Property"
+			 optype="categorical"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+			<Value  value="0"  displayValue="NO"  property="valid" />
+			<Value  value="1"  displayValue="YES"  property="valid" />
+		</DataField>
+		<DataField 
+			 name="OTHER_INSTALL"
+			 displayName="Other Installment Plan Credit"
+			 optype="categorical"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+			<Value  value="0"  displayValue="NO"  property="valid" />
+			<Value  value="1"  displayValue="YES"  property="valid" />
+		</DataField>
+		<DataField 
+			 name="RENT"
+			 displayName="Rents"
+			 optype="categorical"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+			<Value  value="0"  displayValue="NO"  property="valid" />
+			<Value  value="1"  displayValue="YES"  property="valid" />
+		</DataField>
+		<DataField 
+			 name="OWN_RES"
+			 displayName="Owns Residence"
+			 optype="categorical"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+			<Value  value="0"  displayValue="NO"  property="valid" />
+			<Value  value="1"  displayValue="YES"  property="valid" />
+		</DataField>
+		<DataField 
+			 name="FOREIGN"
+			 displayName="Foreign Worker"
+			 optype="categorical"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+			<Value  value="0"  displayValue="NO"  property="valid" />
+			<Value  value="1"  displayValue="YES"  property="valid" />
+		</DataField>
+		<DataField 
+			 name="COAPPLICANT"
+			 displayName="CoApplicant"
+			 optype="categorical"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+			<Value  value="0"  displayValue="NO"  property="valid" />
+			<Value  value="1"  displayValue="YES"  property="valid" />
+		</DataField>
+		<DataField 
+			 name="AMOUNT"
+			 displayName="Credit Amount"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="11" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+		</DataField>
+		<DataField 
+			 name="INSTALL_RATE"
+			 displayName="Installment Rate as Percentage of Current Income"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="11" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+		</DataField>
+		<DataField 
+			 name="AGE"
+			 displayName="Age"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="11" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+		</DataField>
+		<DataField 
+			 name="DURATION"
+			 displayName="Duration of Credit (Months)"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="11" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+		</DataField>
+	</DataDictionary>
+	<GeneralRegressionModel 
+		 targetVariableName="CREDIT"
+		 targetReferenceCategory="1"
+		 modelType="multinomialLogistic"
+		 algorithmName="x-contrastLogistic"
+		 functionName="classification">
+		<Extension  extender="spss.com"  name="numberParameters"  value="36" />
+		<Extension  extender="spss.com"  name="cutoff"  value="0.5" />
+		<MiningSchema >
+			<MiningField  name="CREDIT"  usageType="predicted"  missingValueTreatment="asIs" />
+			<MiningField  name="CHK_ACCT"  usageType="active"  missingValueTreatment="asIs" />
+			<MiningField  name="HISTORY"  usageType="active"  missingValueTreatment="asIs" />
+			<MiningField  name="CREDIT_USE"  usageType="active"  missingValueTreatment="asIs" />
+			<MiningField  name="AMOUNT"  usageType="active"  missingValueTreatment="asIs" />
+			<MiningField  name="SAV_ACCT"  usageType="active"  missingValueTreatment="asIs" />
+			<MiningField  name="EMPLOYMENT"  usageType="active"  missingValueTreatment="asIs" />
+			<MiningField  name="INSTALL_RATE"  usageType="active"  missingValueTreatment="asIs" />
+			<MiningField  name="PRESENT_RESIDENT"  usageType="active"  missingValueTreatment="asIs" />
+			<MiningField  name="REAL_ESTATE"  usageType="active"  missingValueTreatment="asIs" />
+			<MiningField  name="PROP_UNKN_NONE"  usageType="active"  missingValueTreatment="asIs" />
+			<MiningField  name="AGE"  usageType="active"  missingValueTreatment="asIs" />
+			<MiningField  name="OTHER_INSTALL"  usageType="active"  missingValueTreatment="asIs" />
+			<MiningField  name="RENT"  usageType="active"  missingValueTreatment="asIs" />
+			<MiningField  name="OWN_RES"  usageType="active"  missingValueTreatment="asIs" />
+			<MiningField  name="FOREIGN"  usageType="active"  missingValueTreatment="asIs" />
+			<MiningField  name="COAPPLICANT"  usageType="active"  missingValueTreatment="asIs" />
+			<MiningField  name="DURATION"  usageType="active"  missingValueTreatment="asIs" />
+		</MiningSchema>
+		<ParameterList >
+			<Parameter  name="P0000001"  label="Constant" />
+			<Parameter  name="P0000002"  label="Checking Account Status(1)" />
+			<Parameter  name="P0000003"  label="Checking Account Status(2)" />
+			<Parameter  name="P0000004"  label="Checking Account Status(3)" />
+			<Parameter  name="P0000005"  label="Credit History(1)" />
+			<Parameter  name="P0000006"  label="Credit History(2)" />
+			<Parameter  name="P0000007"  label="Credit History(3)" />
+			<Parameter  name="P0000008"  label="Credit History(4)" />
+			<Parameter  name="P0000009"  label="Credit Use(1)" />
+			<Parameter  name="P0000010"  label="Credit Use(2)" />
+			<Parameter  name="P0000011"  label="Credit Use(3)" />
+			<Parameter  name="P0000012"  label="Credit Use(4)" />
+			<Parameter  name="P0000013"  label="Credit Use(5)" />
+			<Parameter  name="P0000014"  label="Credit Use(6)" />
+			<Parameter  name="P0000015"  label="Credit Amount" />
+			<Parameter  name="P0000016"  label="Savings Account Average Balance(1)" />
+			<Parameter  name="P0000017"  label="Savings Account Average Balance(2)" />
+			<Parameter  name="P0000018"  label="Savings Account Average Balance(3)" />
+			<Parameter  name="P0000019"  label="Savings Account Average Balance(4)" />
+			<Parameter  name="P0000020"  label="Years with Current Employer(1)" />
+			<Parameter  name="P0000021"  label="Years with Current Employer(2)" />
+			<Parameter  name="P0000022"  label="Years with Current Employer(3)" />
+			<Parameter  name="P0000023"  label="Years with Current Employer(4)" />
+			<Parameter  name="P0000024"  label="Installment Rate as Percentage of Current Income" />
+			<Parameter  name="P0000025"  label="Years as Resident(1)" />
+			<Parameter  name="P0000026"  label="Years as Resident(2)" />
+			<Parameter  name="P0000027"  label="Years as Resident(3)" />
+			<Parameter  name="P0000028"  label="Owns Real Estate(1)" />
+			<Parameter  name="P0000029"  label="Owns No Property(1)" />
+			<Parameter  name="P0000030"  label="Age" />
+			<Parameter  name="P0000031"  label="Other Installment Plan Credit(1)" />
+			<Parameter  name="P0000032"  label="Rents(1)" />
+			<Parameter  name="P0000033"  label="Owns Residence(1)" />
+			<Parameter  name="P0000034"  label="Foreign Worker(1)" />
+			<Parameter  name="P0000035"  label="CoApplicant(1)" />
+			<Parameter  name="P0000036"  label="Duration of Credit (Months)" />
+		</ParameterList>
+		<FactorList >
+			<Predictor 
+				 name="CHK_ACCT">
+				<Extension 
+					 extender="spss.com"
+					 name="contrastMatrix"
+					 value="Indicator">
+					<X-Basis 
+						 nRow="4"
+						 nCol="3">
+						<X-BasisRow 
+							 value="0"> 1 0 0</X-BasisRow>
+						<X-BasisRow 
+							 value="1"> 0 1 0</X-BasisRow>
+						<X-BasisRow 
+							 value="2"> 0 0 1</X-BasisRow>
+						<X-BasisRow 
+							 value="3"> 0 0 0</X-BasisRow>
+					</X-Basis>
+				</Extension>
+			</Predictor>
+			<Predictor 
+				 name="HISTORY">
+				<Extension 
+					 extender="spss.com"
+					 name="contrastMatrix"
+					 value="Indicator">
+					<X-Basis 
+						 nRow="5"
+						 nCol="4">
+						<X-BasisRow 
+							 value="0"> 1 0 0 0</X-BasisRow>
+						<X-BasisRow 
+							 value="1"> 0 1 0 0</X-BasisRow>
+						<X-BasisRow 
+							 value="2"> 0 0 1 0</X-BasisRow>
+						<X-BasisRow 
+							 value="3"> 0 0 0 1</X-BasisRow>
+						<X-BasisRow 
+							 value="4"> 0 0 0 0</X-BasisRow>
+					</X-Basis>
+				</Extension>
+			</Predictor>
+			<Predictor 
+				 name="CREDIT_USE">
+				<Extension 
+					 extender="spss.com"
+					 name="contrastMatrix"
+					 value="Indicator">
+					<X-Basis 
+						 nRow="7"
+						 nCol="6">
+						<X-BasisRow 
+							 value="0"> 1 0 0 0 0 0</X-BasisRow>
+						<X-BasisRow 
+							 value="1"> 0 1 0 0 0 0</X-BasisRow>
+						<X-BasisRow 
+							 value="2"> 0 0 1 0 0 0</X-BasisRow>
+						<X-BasisRow 
+							 value="3"> 0 0 0 1 0 0</X-BasisRow>
+						<X-BasisRow 
+							 value="4"> 0 0 0 0 1 0</X-BasisRow>
+						<X-BasisRow 
+							 value="5"> 0 0 0 0 0 1</X-BasisRow>
+						<X-BasisRow 
+							 value="6"> 0 0 0 0 0 0</X-BasisRow>
+					</X-Basis>
+				</Extension>
+			</Predictor>
+			<Predictor 
+				 name="SAV_ACCT">
+				<Extension 
+					 extender="spss.com"
+					 name="contrastMatrix"
+					 value="Indicator">
+					<X-Basis 
+						 nRow="5"
+						 nCol="4">
+						<X-BasisRow 
+							 value="0"> 1 0 0 0</X-BasisRow>
+						<X-BasisRow 
+							 value="1"> 0 1 0 0</X-BasisRow>
+						<X-BasisRow 
+							 value="2"> 0 0 1 0</X-BasisRow>
+						<X-BasisRow 
+							 value="3"> 0 0 0 1</X-BasisRow>
+						<X-BasisRow 
+							 value="4"> 0 0 0 0</X-BasisRow>
+					</X-Basis>
+				</Extension>
+			</Predictor>
+			<Predictor 
+				 name="EMPLOYMENT">
+				<Extension 
+					 extender="spss.com"
+					 name="contrastMatrix"
+					 value="Indicator">
+					<X-Basis 
+						 nRow="5"
+						 nCol="4">
+						<X-BasisRow 
+							 value="0"> 1 0 0 0</X-BasisRow>
+						<X-BasisRow 
+							 value="1"> 0 1 0 0</X-BasisRow>
+						<X-BasisRow 
+							 value="2"> 0 0 1 0</X-BasisRow>
+						<X-BasisRow 
+							 value="3"> 0 0 0 1</X-BasisRow>
+						<X-BasisRow 
+							 value="4"> 0 0 0 0</X-BasisRow>
+					</X-Basis>
+				</Extension>
+			</Predictor>
+			<Predictor 
+				 name="PRESENT_RESIDENT">
+				<Extension 
+					 extender="spss.com"
+					 name="contrastMatrix"
+					 value="Indicator">
+					<X-Basis 
+						 nRow="4"
+						 nCol="3">
+						<X-BasisRow 
+							 value="1"> 1 0 0</X-BasisRow>
+						<X-BasisRow 
+							 value="2"> 0 1 0</X-BasisRow>
+						<X-BasisRow 
+							 value="3"> 0 0 1</X-BasisRow>
+						<X-BasisRow 
+							 value="4"> 0 0 0</X-BasisRow>
+					</X-Basis>
+				</Extension>
+			</Predictor>
+			<Predictor 
+				 name="REAL_ESTATE">
+				<Extension 
+					 extender="spss.com"
+					 name="contrastMatrix"
+					 value="Indicator">
+					<X-Basis 
+						 nRow="2"
+						 nCol="1">
+						<X-BasisRow 
+							 value="0"> 1</X-BasisRow>
+						<X-BasisRow 
+							 value="1"> 0</X-BasisRow>
+					</X-Basis>
+				</Extension>
+			</Predictor>
+			<Predictor 
+				 name="PROP_UNKN_NONE">
+				<Extension 
+					 extender="spss.com"
+					 name="contrastMatrix"
+					 value="Indicator">
+					<X-Basis 
+						 nRow="2"
+						 nCol="1">
+						<X-BasisRow 
+							 value="0"> 1</X-BasisRow>
+						<X-BasisRow 
+							 value="1"> 0</X-BasisRow>
+					</X-Basis>
+				</Extension>
+			</Predictor>
+			<Predictor 
+				 name="OTHER_INSTALL">
+				<Extension 
+					 extender="spss.com"
+					 name="contrastMatrix"
+					 value="Indicator">
+					<X-Basis 
+						 nRow="2"
+						 nCol="1">
+						<X-BasisRow 
+							 value="0"> 1</X-BasisRow>
+						<X-BasisRow 
+							 value="1"> 0</X-BasisRow>
+					</X-Basis>
+				</Extension>
+			</Predictor>
+			<Predictor 
+				 name="RENT">
+				<Extension 
+					 extender="spss.com"
+					 name="contrastMatrix"
+					 value="Indicator">
+					<X-Basis 
+						 nRow="2"
+						 nCol="1">
+						<X-BasisRow 
+							 value="0"> 1</X-BasisRow>
+						<X-BasisRow 
+							 value="1"> 0</X-BasisRow>
+					</X-Basis>
+				</Extension>
+			</Predictor>
+			<Predictor 
+				 name="OWN_RES">
+				<Extension 
+					 extender="spss.com"
+					 name="contrastMatrix"
+					 value="Indicator">
+					<X-Basis 
+						 nRow="2"
+						 nCol="1">
+						<X-BasisRow 
+							 value="0"> 1</X-BasisRow>
+						<X-BasisRow 
+							 value="1"> 0</X-BasisRow>
+					</X-Basis>
+				</Extension>
+			</Predictor>
+			<Predictor 
+				 name="FOREIGN">
+				<Extension 
+					 extender="spss.com"
+					 name="contrastMatrix"
+					 value="Indicator">
+					<X-Basis 
+						 nRow="2"
+						 nCol="1">
+						<X-BasisRow 
+							 value="0"> 1</X-BasisRow>
+						<X-BasisRow 
+							 value="1"> 0</X-BasisRow>
+					</X-Basis>
+				</Extension>
+			</Predictor>
+			<Predictor 
+				 name="COAPPLICANT">
+				<Extension 
+					 extender="spss.com"
+					 name="contrastMatrix"
+					 value="Indicator">
+					<X-Basis 
+						 nRow="2"
+						 nCol="1">
+						<X-BasisRow 
+							 value="0"> 1</X-BasisRow>
+						<X-BasisRow 
+							 value="1"> 0</X-BasisRow>
+					</X-Basis>
+				</Extension>
+			</Predictor>
+		</FactorList>
+		<CovariateList >
+			<Predictor  name="AMOUNT" />
+			<Predictor  name="INSTALL_RATE" />
+			<Predictor  name="AGE" />
+			<Predictor  name="DURATION" />
+		</CovariateList>
+		<PPMatrix >
+			<PPCell  value="0"  predictorName="CHK_ACCT"  parameterName="P0000002" />
+			<PPCell  value="1"  predictorName="CHK_ACCT"  parameterName="P0000003" />
+			<PPCell  value="2"  predictorName="CHK_ACCT"  parameterName="P0000004" />
+			<PPCell  value="0"  predictorName="HISTORY"  parameterName="P0000005" />
+			<PPCell  value="1"  predictorName="HISTORY"  parameterName="P0000006" />
+			<PPCell  value="2"  predictorName="HISTORY"  parameterName="P0000007" />
+			<PPCell  value="3"  predictorName="HISTORY"  parameterName="P0000008" />
+			<PPCell  value="0"  predictorName="CREDIT_USE"  parameterName="P0000009" />
+			<PPCell  value="1"  predictorName="CREDIT_USE"  parameterName="P0000010" />
+			<PPCell  value="2"  predictorName="CREDIT_USE"  parameterName="P0000011" />
+			<PPCell  value="3"  predictorName="CREDIT_USE"  parameterName="P0000012" />
+			<PPCell  value="4"  predictorName="CREDIT_USE"  parameterName="P0000013" />
+			<PPCell  value="5"  predictorName="CREDIT_USE"  parameterName="P0000014" />
+			<PPCell  value="1"  predictorName="AMOUNT"  parameterName="P0000015" />
+			<PPCell  value="0"  predictorName="SAV_ACCT"  parameterName="P0000016" />
+			<PPCell  value="1"  predictorName="SAV_ACCT"  parameterName="P0000017" />
+			<PPCell  value="2"  predictorName="SAV_ACCT"  parameterName="P0000018" />
+			<PPCell  value="3"  predictorName="SAV_ACCT"  parameterName="P0000019" />
+			<PPCell  value="0"  predictorName="EMPLOYMENT"  parameterName="P0000020" />
+			<PPCell  value="1"  predictorName="EMPLOYMENT"  parameterName="P0000021" />
+			<PPCell  value="2"  predictorName="EMPLOYMENT"  parameterName="P0000022" />
+			<PPCell  value="3"  predictorName="EMPLOYMENT"  parameterName="P0000023" />
+			<PPCell  value="1"  predictorName="INSTALL_RATE"  parameterName="P0000024" />
+			<PPCell  value="1"  predictorName="PRESENT_RESIDENT"  parameterName="P0000025" />
+			<PPCell  value="2"  predictorName="PRESENT_RESIDENT"  parameterName="P0000026" />
+			<PPCell  value="3"  predictorName="PRESENT_RESIDENT"  parameterName="P0000027" />
+			<PPCell  value="0"  predictorName="REAL_ESTATE"  parameterName="P0000028" />
+			<PPCell  value="0"  predictorName="PROP_UNKN_NONE"  parameterName="P0000029" />
+			<PPCell  value="1"  predictorName="AGE"  parameterName="P0000030" />
+			<PPCell  value="0"  predictorName="OTHER_INSTALL"  parameterName="P0000031" />
+			<PPCell  value="0"  predictorName="RENT"  parameterName="P0000032" />
+			<PPCell  value="0"  predictorName="OWN_RES"  parameterName="P0000033" />
+			<PPCell  value="0"  predictorName="FOREIGN"  parameterName="P0000034" />
+			<PPCell  value="0"  predictorName="COAPPLICANT"  parameterName="P0000035" />
+			<PPCell  value="1"  predictorName="DURATION"  parameterName="P0000036" />
+		</PPMatrix>
+		<PCovMatrix >
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000001"  pCol="P0000001"  value="1.43121636815014" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000002"  pCol="P0000001"  value="-0.0261081678236018" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000002"  pCol="P0000002"  value="0.0523077516117641" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000003"  pCol="P0000001"  value="-0.0296290296577147" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000003"  pCol="P0000002"  value="0.0296072673953173" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000003"  pCol="P0000003"  value="0.0517998528987161" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000004"  pCol="P0000001"  value="-0.0178073428430964" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000004"  pCol="P0000002"  value="0.0309084590085704" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000004"  pCol="P0000003"  value="0.0293783284854687" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000004"  pCol="P0000004"  value="0.141693960623436" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000005"  pCol="P0000001"  value="-0.0417587433649037" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000005"  pCol="P0000002"  value="-0.0036037348074238" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000005"  pCol="P0000003"  value="-0.00642929736176479" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000005"  pCol="P0000004"  value="-0.0059757763626162" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000005"  pCol="P0000005"  value="0.184954693517569" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000006"  pCol="P0000001"  value="-0.0455966873928672" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000006"  pCol="P0000002"  value="-0.00943594356483474" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000006"  pCol="P0000003"  value="-0.00471749954846536" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000006"  pCol="P0000004"  value="-0.00492718845112495" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000006"  pCol="P0000005"  value="0.0369682895225706" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000006"  pCol="P0000006"  value="0.162321273353228" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000007"  pCol="P0000001"  value="-0.0232093060282677" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000007"  pCol="P0000002"  value="-0.00395114034695494" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000007"  pCol="P0000003"  value="-0.0022944777541512" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000007"  pCol="P0000004"  value="-0.0034823810076832" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000007"  pCol="P0000005"  value="0.0334031371863808" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000007"  pCol="P0000006"  value="0.0337542433102633" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000007"  pCol="P0000007"  value="0.0462984889271775" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000008"  pCol="P0000001"  value="-0.019053441672131" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000008"  pCol="P0000002"  value="1.59520345509663E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000008"  pCol="P0000003"  value="-0.00462108886341181" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000008"  pCol="P0000004"  value="0.000591928898318004" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000008"  pCol="P0000005"  value="0.0402886078980467" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000008"  pCol="P0000006"  value="0.0344327191092861" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000008"  pCol="P0000007"  value="0.0327805412488785" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000008"  pCol="P0000008"  value="0.109083512284085" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000009"  pCol="P0000001"  value="-0.0967121606943303" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000009"  pCol="P0000002"  value="-0.00486106362930583" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000009"  pCol="P0000003"  value="-0.00183085048872433" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000009"  pCol="P0000004"  value="0.0010073179698081" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000009"  pCol="P0000005"  value="0.010013317522805" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000009"  pCol="P0000006"  value="-0.00494564213506326" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000009"  pCol="P0000007"  value="-0.00412848155051102" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000009"  pCol="P0000008"  value="0.01076966390572" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000009"  pCol="P0000009"  value="0.194959548019947" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000010"  pCol="P0000001"  value="-0.100481673643996" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000010"  pCol="P0000002"  value="-0.0043237301192565" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000010"  pCol="P0000003"  value="0.00221648513028994" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000010"  pCol="P0000004"  value="-0.000602123380762398" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000010"  pCol="P0000005"  value="0.0262416443604961" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000010"  pCol="P0000006"  value="0.00498249725137262" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000010"  pCol="P0000007"  value="0.00108069498514603" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000010"  pCol="P0000008"  value="0.0149699933636706" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000010"  pCol="P0000009"  value="0.0783463535893908" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000010"  pCol="P0000010"  value="0.107491235455866" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000011"  pCol="P0000001"  value="-0.0639804675199853" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000011"  pCol="P0000002"  value="-0.00531433572382267" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000011"  pCol="P0000003"  value="0.00143728186342334" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000011"  pCol="P0000004"  value="0.00164323225272287" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000011"  pCol="P0000005"  value="0.02599102352537" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000011"  pCol="P0000006"  value="0.00194513300699484" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000011"  pCol="P0000007"  value="-0.000850727054883929" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000011"  pCol="P0000008"  value="0.0203942168372475" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000011"  pCol="P0000009"  value="0.0776253998133203" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000011"  pCol="P0000010"  value="0.0803259351724094" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000011"  pCol="P0000011"  value="0.182810799823511" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000012"  pCol="P0000001"  value="-0.0930902077138933" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000012"  pCol="P0000002"  value="-0.00725795727062649" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000012"  pCol="P0000003"  value="0.00189473640314525" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000012"  pCol="P0000004"  value="-0.00206948092343834" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000012"  pCol="P0000005"  value="0.0244473417710132" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000012"  pCol="P0000006"  value="0.00360686893726923" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000012"  pCol="P0000007"  value="-0.00136531118426594" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000012"  pCol="P0000008"  value="0.0156236116342814" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000012"  pCol="P0000009"  value="0.0789101440730858" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000012"  pCol="P0000010"  value="0.0812472270450481" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000012"  pCol="P0000011"  value="0.081363858732751" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000012"  pCol="P0000012"  value="0.119068800024754" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000013"  pCol="P0000001"  value="-0.0885123436272166" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000013"  pCol="P0000002"  value="-0.00159488147609512" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000013"  pCol="P0000003"  value="0.000663281582191787" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000013"  pCol="P0000004"  value="-0.00461508723549704" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000013"  pCol="P0000005"  value="0.0230844653831326" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000013"  pCol="P0000006"  value="0.00255714637328417" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000013"  pCol="P0000007"  value="-0.00523503628802575" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000013"  pCol="P0000008"  value="0.0107794636091588" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000013"  pCol="P0000009"  value="0.0764995817777359" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000013"  pCol="P0000010"  value="0.078156629171267" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000013"  pCol="P0000011"  value="0.0755743900050018" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000013"  pCol="P0000012"  value="0.0797664348860832" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000013"  pCol="P0000013"  value="0.107428845365878" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000014"  pCol="P0000001"  value="-0.0814612821762415" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000014"  pCol="P0000002"  value="0.000811505246503931" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000014"  pCol="P0000003"  value="0.00435281761310669" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000014"  pCol="P0000004"  value="-0.00190732405684292" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000014"  pCol="P0000005"  value="0.0329075553597582" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000014"  pCol="P0000006"  value="0.00608144335282477" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000014"  pCol="P0000007"  value="0.00120928569152469" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000014"  pCol="P0000008"  value="0.0151531299051005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000014"  pCol="P0000009"  value="0.0773256444042504" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000014"  pCol="P0000010"  value="0.0820123584055288" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000014"  pCol="P0000011"  value="0.0845077801661204" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000014"  pCol="P0000012"  value="0.0822187187948886" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000014"  pCol="P0000013"  value="0.0788042595749462" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000014"  pCol="P0000014"  value="0.210836035423057" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000015"  pCol="P0000001"  value="-8.73274047653379E-006" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000015"  pCol="P0000002"  value="6.53468115529892E-007" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000015"  pCol="P0000003"  value="-3.66100932759565E-008" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000015"  pCol="P0000004"  value="1.13302427000563E-006" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000015"  pCol="P0000005"  value="-5.55590423831928E-007" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000015"  pCol="P0000006"  value="6.85412907949481E-007" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000015"  pCol="P0000007"  value="3.39141446902334E-007" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000015"  pCol="P0000008"  value="-1.67876463693678E-007" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000015"  pCol="P0000009"  value="-4.88659249701451E-007" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000015"  pCol="P0000010"  value="-2.19550085380329E-007" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000015"  pCol="P0000011"  value="-2.60610841858987E-006" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000015"  pCol="P0000012"  value="-2.52384492530964E-007" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000015"  pCol="P0000013"  value="3.12260265248556E-007" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000015"  pCol="P0000014"  value="2.23839119492604E-007" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000015"  pCol="P0000015"  value="1.68493647614151E-009" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000016"  pCol="P0000001"  value="-0.0558352465702027" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000016"  pCol="P0000002"  value="-0.00625819593374997" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000016"  pCol="P0000003"  value="-0.000988413318433635" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000016"  pCol="P0000004"  value="-0.00437541849301245" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000016"  pCol="P0000005"  value="-3.44117916199579E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000016"  pCol="P0000006"  value="0.00676514202892805" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000016"  pCol="P0000007"  value="0.00554620058764926" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000016"  pCol="P0000008"  value="0.00513844225490272" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000016"  pCol="P0000009"  value="-5.40296973648694E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000016"  pCol="P0000010"  value="0.00346297296803105" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000016"  pCol="P0000011"  value="-0.00087896638100957" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000016"  pCol="P0000012"  value="-0.00262959620447815" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000016"  pCol="P0000013"  value="-0.00232387443794008" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000016"  pCol="P0000014"  value="0.0029604832777273" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000016"  pCol="P0000015"  value="8.70949751965589E-007" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000016"  pCol="P0000016"  value="0.0661970097327509" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000017"  pCol="P0000001"  value="-0.0699301772406254" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000017"  pCol="P0000002"  value="0.000797117760055926" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000017"  pCol="P0000003"  value="-0.00691977744985714" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000017"  pCol="P0000004"  value="-0.000955664029529112" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000017"  pCol="P0000005"  value="-0.00229896566632743" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000017"  pCol="P0000006"  value="-0.00509389084818768" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000017"  pCol="P0000007"  value="0.000955882424522038" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000017"  pCol="P0000008"  value="-0.00045573205926691" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000017"  pCol="P0000009"  value="0.00450377265194024" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000017"  pCol="P0000010"  value="0.00373733099501903" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000017"  pCol="P0000011"  value="0.00452696923321183" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000017"  pCol="P0000012"  value="0.00557452651379343" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000017"  pCol="P0000013"  value="0.00314732159608501" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000017"  pCol="P0000014"  value="0.00835724944437499" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000017"  pCol="P0000015"  value="1.42564000635947E-006" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000017"  pCol="P0000016"  value="0.0521515145827181" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000017"  pCol="P0000017"  value="0.11845833730464" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000018"  pCol="P0000001"  value="-0.0740178511051233" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000018"  pCol="P0000002"  value="0.0090467595570321" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000018"  pCol="P0000003"  value="0.00909371135185105" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000018"  pCol="P0000004"  value="0.00783587418910712" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000018"  pCol="P0000005"  value="0.00285720809637216" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000018"  pCol="P0000006"  value="-0.00433469718831113" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000018"  pCol="P0000007"  value="0.00406959832780706" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000018"  pCol="P0000008"  value="0.00665721425692596" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000018"  pCol="P0000009"  value="0.00259512094053818" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000018"  pCol="P0000010"  value="0.00377406849305179" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000018"  pCol="P0000011"  value="-9.11560381204777E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000018"  pCol="P0000012"  value="-0.00340823718062421" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000018"  pCol="P0000013"  value="-0.00584159432092474" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000018"  pCol="P0000014"  value="0.0078144361888103" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000018"  pCol="P0000015"  value="1.61580318945072E-006" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000018"  pCol="P0000016"  value="0.0541046902311946" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000018"  pCol="P0000017"  value="0.0527628076891169" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000018"  pCol="P0000018"  value="0.198669669550132" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000019"  pCol="P0000001"  value="-0.0646948419742586" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000019"  pCol="P0000002"  value="-0.0038723674645767" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000019"  pCol="P0000003"  value="-0.00840843482247493" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000019"  pCol="P0000004"  value="-0.00189221819699329" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000019"  pCol="P0000005"  value="0.00751092654143384" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000019"  pCol="P0000006"  value="-0.00337283066905046" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000019"  pCol="P0000007"  value="0.00396339375322545" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000019"  pCol="P0000008"  value="0.00938834781025487" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000019"  pCol="P0000009"  value="0.00713861644137771" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000019"  pCol="P0000010"  value="0.00677061289874572" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000019"  pCol="P0000011"  value="0.00198982171057304" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000019"  pCol="P0000012"  value="-0.0030422038305325" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000019"  pCol="P0000013"  value="0.00385183455430326" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000019"  pCol="P0000014"  value="0.00193732056018815" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000019"  pCol="P0000015"  value="7.64543036081963E-007" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000019"  pCol="P0000016"  value="0.054370114765766" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000019"  pCol="P0000017"  value="0.0536146092813961" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000019"  pCol="P0000018"  value="0.0536720064632975" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000019"  pCol="P0000019"  value="0.315625993392613" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000020"  pCol="P0000001"  value="-0.0164567629651156" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000020"  pCol="P0000002"  value="-0.00435628708392565" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000020"  pCol="P0000003"  value="-0.00594432217418895" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000020"  pCol="P0000004"  value="0.00297928706315018" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000020"  pCol="P0000005"  value="0.00483622551735491" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000020"  pCol="P0000006"  value="-0.00402648227299139" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000020"  pCol="P0000007"  value="-0.00173145054133703" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000020"  pCol="P0000008"  value="-0.0019794143992199" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000020"  pCol="P0000009"  value="-0.015310363969011" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000020"  pCol="P0000010"  value="-0.00171728990885006" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000020"  pCol="P0000011"  value="0.000232319380943259" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000020"  pCol="P0000012"  value="-0.00220871705812376" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000020"  pCol="P0000013"  value="0.00281945809879372" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000020"  pCol="P0000014"  value="0.00289544310819862" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000020"  pCol="P0000015"  value="-1.10503015190028E-006" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000020"  pCol="P0000016"  value="-0.00206962817423783" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000020"  pCol="P0000017"  value="-0.000736244213766981" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000020"  pCol="P0000018"  value="-0.00178254582756067" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000020"  pCol="P0000019"  value="0.00672877671591109" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000020"  pCol="P0000020"  value="0.134163426933366" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000021"  pCol="P0000001"  value="-0.0615320703123425" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000021"  pCol="P0000002"  value="0.000757747872132391" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000021"  pCol="P0000003"  value="-0.00211636870663499" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000021"  pCol="P0000004"  value="-0.00150990055293954" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000021"  pCol="P0000005"  value="-0.00445603902272903" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000021"  pCol="P0000006"  value="-0.0062626782016032" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000021"  pCol="P0000007"  value="-0.00444689456910307" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000021"  pCol="P0000008"  value="-0.00381315482570137" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000021"  pCol="P0000009"  value="-0.00254422444410764" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000021"  pCol="P0000010"  value="-0.00170321348671429" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000021"  pCol="P0000011"  value="0.00225221333355944" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000021"  pCol="P0000012"  value="-0.00322097158279648" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000021"  pCol="P0000013"  value="-0.00124920558201377" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000021"  pCol="P0000014"  value="-0.00522245855035146" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000021"  pCol="P0000015"  value="-1.71739163797396E-008" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000021"  pCol="P0000016"  value="-0.00366871670321078" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000021"  pCol="P0000017"  value="-0.00111104470617572" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000021"  pCol="P0000018"  value="0.00225132066129891" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000021"  pCol="P0000019"  value="-0.00394242200437901" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000021"  pCol="P0000020"  value="0.0348150967029958" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000021"  pCol="P0000021"  value="0.0819904216087728" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000022"  pCol="P0000001"  value="-0.0513503476507567" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000022"  pCol="P0000002"  value="-0.00131828083811488" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000022"  pCol="P0000003"  value="0.000231939404772771" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000022"  pCol="P0000004"  value="0.00181989523961594" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000022"  pCol="P0000005"  value="-0.00780409094115767" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000022"  pCol="P0000006"  value="-0.00731163076244153" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000022"  pCol="P0000007"  value="-0.00427868204303667" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000022"  pCol="P0000008"  value="-0.00406824624194893" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000022"  pCol="P0000009"  value="-0.00344280445855596" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000022"  pCol="P0000010"  value="-0.0001033022828049" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000022"  pCol="P0000011"  value="0.00371446457763286" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000022"  pCol="P0000012"  value="-0.00111719133132687" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000022"  pCol="P0000013"  value="0.000401799950282011" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000022"  pCol="P0000014"  value="-0.00576393957748753" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000022"  pCol="P0000015"  value="9.95834993750972E-008" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000022"  pCol="P0000016"  value="-0.00139468647190655" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000022"  pCol="P0000017"  value="-0.000398598927906326" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000022"  pCol="P0000018"  value="0.000266086423328493" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000022"  pCol="P0000019"  value="-0.000589572575762312" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000022"  pCol="P0000020"  value="0.0349426020866201" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000022"  pCol="P0000021"  value="0.0414529860206349" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000022"  pCol="P0000022"  value="0.0610471270711335" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000023"  pCol="P0000001"  value="-0.0401365082228816" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000023"  pCol="P0000002"  value="-0.00269146622296915" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000023"  pCol="P0000003"  value="-0.00124014890177355" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000023"  pCol="P0000004"  value="-9.56836216621137E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000023"  pCol="P0000005"  value="0.00051963673005045" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000023"  pCol="P0000006"  value="-0.0106937176388346" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000023"  pCol="P0000007"  value="-0.00386207074474033" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000023"  pCol="P0000008"  value="-0.00180043256831547" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000023"  pCol="P0000009"  value="0.00488988026162063" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000023"  pCol="P0000010"  value="0.00117139509426256" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000023"  pCol="P0000011"  value="0.00863931309302852" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000023"  pCol="P0000012"  value="0.00487734368823116" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000023"  pCol="P0000013"  value="0.00326706573210251" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000023"  pCol="P0000014"  value="0.000569794816727926" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000023"  pCol="P0000015"  value="-5.49741317192074E-007" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000023"  pCol="P0000016"  value="-0.00221808115313605" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000023"  pCol="P0000017"  value="-0.00398071451855463" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000023"  pCol="P0000018"  value="0.00266073356230573" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000023"  pCol="P0000019"  value="-0.000910775279376036" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000023"  pCol="P0000020"  value="0.0337974548738235" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000023"  pCol="P0000021"  value="0.0420260587330536" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000023"  pCol="P0000022"  value="0.0393050904917147" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000023"  pCol="P0000023"  value="0.0902428010252888" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000024"  pCol="P0000001"  value="-0.0238884811517084" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000024"  pCol="P0000002"  value="0.000411486395037377" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000024"  pCol="P0000003"  value="0.00136874531566855" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000024"  pCol="P0000004"  value="0.00202132904780642" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000024"  pCol="P0000005"  value="0.00193990540732469" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000024"  pCol="P0000006"  value="0.000530396161392773" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000024"  pCol="P0000007"  value="0.000858804389743537" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000024"  pCol="P0000008"  value="0.00105577060137922" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000024"  pCol="P0000009"  value="-0.0016556385824458" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000024"  pCol="P0000010"  value="0.00085093140632242" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000024"  pCol="P0000011"  value="7.5664896097343E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000024"  pCol="P0000012"  value="0.000604844410269661" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000024"  pCol="P0000013"  value="-0.00159592755519118" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000024"  pCol="P0000014"  value="-9.7846255316525E-006" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000024"  pCol="P0000015"  value="1.38631446538434E-006" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000024"  pCol="P0000016"  value="0.00170854668729622" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000024"  pCol="P0000017"  value="0.00167125053113339" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000024"  pCol="P0000018"  value="0.00363259349441731" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000024"  pCol="P0000019"  value="-0.000103563649130106" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000024"  pCol="P0000020"  value="0.00104713249347338" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000024"  pCol="P0000021"  value="0.000889387395273258" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000024"  pCol="P0000022"  value="0.00175357105647134" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000024"  pCol="P0000023"  value="0.000506653961636621" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000024"  pCol="P0000024"  value="0.00715010554540559" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000025"  pCol="P0000001"  value="-0.0356937699138017" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000025"  pCol="P0000002"  value="-0.00168666400278428" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000025"  pCol="P0000003"  value="-0.00298352023595045" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000025"  pCol="P0000004"  value="-0.00899653949444763" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000025"  pCol="P0000005"  value="-0.00646179786647283" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000025"  pCol="P0000006"  value="-0.00512149621362097" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000025"  pCol="P0000007"  value="-0.00571148990885964" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000025"  pCol="P0000008"  value="-0.00287251113783896" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000025"  pCol="P0000009"  value="0.00526318451683318" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000025"  pCol="P0000010"  value="0.00471688824064258" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000025"  pCol="P0000011"  value="0.00853255352988176" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000025"  pCol="P0000012"  value="0.00488132570969759" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000025"  pCol="P0000013"  value="0.00476044907202842" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000025"  pCol="P0000014"  value="0.00262022610119303" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000025"  pCol="P0000015"  value="-1.40795244110568E-008" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000025"  pCol="P0000016"  value="-0.0050910255995483" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000025"  pCol="P0000017"  value="-0.00184287460704822" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000025"  pCol="P0000018"  value="-0.00294501305523125" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000025"  pCol="P0000019"  value="-0.00158323663789153" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000025"  pCol="P0000020"  value="-0.00844977798347681" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000025"  pCol="P0000021"  value="-0.0213738977520692" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000025"  pCol="P0000022"  value="-0.00591570654340856" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000025"  pCol="P0000023"  value="-0.00928854233394886" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000025"  pCol="P0000024"  value="0.000745359298088884" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000025"  pCol="P0000025"  value="0.0856964797543104" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000026"  pCol="P0000001"  value="-0.035573976736225" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000026"  pCol="P0000002"  value="0.00519005084552432" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000026"  pCol="P0000003"  value="0.00275868424448213" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000026"  pCol="P0000004"  value="-0.00223114782183079" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000026"  pCol="P0000005"  value="0.00210312311680972" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000026"  pCol="P0000006"  value="0.000813904540984878" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000026"  pCol="P0000007"  value="-0.00192561246685959" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000026"  pCol="P0000008"  value="-0.00408642204775998" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000026"  pCol="P0000009"  value="0.00325365906743152" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000026"  pCol="P0000010"  value="0.000576150793283219" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000026"  pCol="P0000011"  value="0.00277991190442427" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000026"  pCol="P0000012"  value="0.00245524321457866" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000026"  pCol="P0000013"  value="0.000505742024989626" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000026"  pCol="P0000014"  value="0.0041498693414331" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000026"  pCol="P0000015"  value="-5.75758725350914E-007" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000026"  pCol="P0000016"  value="-0.000801449869825394" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000026"  pCol="P0000017"  value="-9.36112389231908E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000026"  pCol="P0000018"  value="0.000735417775882425" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000026"  pCol="P0000019"  value="-0.0064729901771075" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000026"  pCol="P0000020"  value="-0.00983897636732667" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000026"  pCol="P0000021"  value="-0.0054673754455045" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000026"  pCol="P0000022"  value="-0.0117453236780342" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000026"  pCol="P0000023"  value="-0.00405447642675866" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000026"  pCol="P0000024"  value="-7.47388594302916E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000026"  pCol="P0000025"  value="0.0244092759299359" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000026"  pCol="P0000026"  value="0.0480701457743854" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000001"  value="-0.0316100740981411" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000002"  value="-0.00101836285757989" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000003"  value="-0.00152872319595663" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000004"  value="0.000836165620648744" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000005"  value="0.000958196400734728" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000006"  value="0.0038601651408376" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000007"  value="0.00104277611518404" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000008"  value="-0.000810392095697186" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000009"  value="-0.0090641818886761" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000010"  value="-0.00453730528205304" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000011"  value="-0.000980046864537738" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000012"  value="-0.00156473244183945" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000013"  value="-0.0033382670502191" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000014"  value="-0.00238153255128635" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000015"  value="2.81315326539599E-008" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000016"  value="-0.00130971762820592" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000017"  value="-0.00368547710727853" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000018"  value="-0.00472368587250596" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000019"  value="-0.00697507803581087" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000020"  value="-0.00469627402347501" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000021"  value="-0.00980950867350325" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000022"  value="-0.00696488990492183" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000023"  value="-0.0141399752098227" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000024"  value="0.000577249456619524" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000025"  value="0.0246405722248939" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000026"  value="0.0221795173251152" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000027"  pCol="P0000027"  value="0.0704140797650009" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000001"  value="-0.0317104476262433" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000002"  value="-0.000484178175098806" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000003"  value="0.00122148882385212" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000004"  value="-0.00190839835760194" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000005"  value="-0.00502649567696454" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000006"  value="-0.000362392461187351" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000007"  value="-0.000579729670746081" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000008"  value="-0.00271371997297228" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000009"  value="-0.000243705435765457" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000010"  value="-0.00131128072712008" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000011"  value="-0.00500731894335189" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000012"  value="-0.00614003533039712" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000013"  value="0.00124077912477832" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000014"  value="-0.00943658190505322" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000015"  value="-8.73327526697061E-007" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000016"  value="0.00127686446739511" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000017"  value="-0.0052406666431612" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000018"  value="-0.000306917179574135" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000019"  value="0.00264826329097396" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000020"  value="-0.00206894888743204" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000021"  value="0.00158018472529186" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000022"  value="0.00515666422687598" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000023"  value="0.000806846325358446" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000024"  value="-0.00102752520782602" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000025"  value="0.00214702629135399" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000026"  value="0.000535928244926103" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000027"  value="1.2199730163932E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000028"  pCol="P0000028"  value="0.0431487488279179" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000001"  value="-0.244995607053004" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000002"  value="-0.00137026841158195" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000003"  value="0.000789614641408469" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000004"  value="-0.00214990706455211" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000005"  value="-0.00313281613991368" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000006"  value="0.00578356547378718" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000007"  value="-0.0018372706465366" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000008"  value="-0.00293366390181406" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000009"  value="0.0084977172208228" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000010"  value="0.00320771572615736" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000011"  value="0.00196327574958524" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000012"  value="0.000775512950243718" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000013"  value="0.00420608819267654" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000014"  value="0.012051620053787" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000015"  value="1.2265526485598E-006" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000016"  value="-0.00389345849836192" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000017"  value="0.00178330682792958" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000018"  value="0.00233284093329028" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000019"  value="0.00263230965083876" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000020"  value="-0.00374085699992728" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000021"  value="-0.00147418090359294" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000022"  value="-0.00583534026658743" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000023"  value="-0.00638151037728879" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000024"  value="0.00081376654940784" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000025"  value="0.00388022599972202" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000026"  value="-0.00205465600620306" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000027"  value="0.00231520340081128" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000028"  value="0.00992133707433177" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000029"  pCol="P0000029"  value="0.141702469879561" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000001"  value="-0.00308681046221264" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000002"  value="-1.11751003307184E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000003"  value="6.60980618328905E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000004"  value="-9.50820303232607E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000005"  value="8.26218939416535E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000006"  value="0.000102181566590908" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000007"  value="0.000113180184552991" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000008"  value="-4.85855252733508E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000009"  value="3.74003357220447E-006" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000010"  value="-4.38147013755798E-006" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000011"  value="9.46201350036466E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000012"  value="0.000223488162161348" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000013"  value="0.000181607228658601" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000014"  value="-2.70386810361708E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000015"  value="-1.64377958339157E-008" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000016"  value="-1.88908021888081E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000017"  value="0.000134503112804703" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000018"  value="-1.62687362516692E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000019"  value="-0.000144770631040374" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000020"  value="0.000249866382748383" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000021"  value="0.000709115089851597" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000022"  value="0.000579284961030416" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000023"  value="0.000610475225849355" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000024"  value="-3.13404965026662E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000025"  value="0.000220559089961975" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000026"  value="0.000271933786447515" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000027"  value="4.86402101762644E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000028"  value="7.74671892495564E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000029"  value="8.66664816942011E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000030"  pCol="P0000030"  value="7.98211302807081E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000001"  value="-0.0199129191403494" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000002"  value="-0.00247873788663014" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000003"  value="-0.00193768856677003" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000004"  value="-0.0013683413056091" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000005"  value="0.00258116835463403" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000006"  value="0.0195982398734998" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000007"  value="-0.00137385394595503" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000008"  value="0.00166310213030297" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000009"  value="-0.00510607959849158" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000010"  value="-0.00663462493078461" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000011"  value="-0.00410805625998923" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000012"  value="-0.00487777989243258" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000013"  value="-0.00410532925705521" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000014"  value="-0.00584531339349357" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000015"  value="-6.28440214212602E-008" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000016"  value="-0.000745047325193969" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000017"  value="-0.00196364675745435" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000018"  value="-0.00157736805196512" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000019"  value="0.00349504388281636" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000020"  value="-0.00151331111297688" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000021"  value="-0.0011756910513381" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000022"  value="-0.00213509507202372" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000023"  value="-0.0019352202176524" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000024"  value="-0.000643811908644228" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000025"  value="0.0011091010641467" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000026"  value="0.00079627091668579" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000027"  value="0.00114223589703269" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000028"  value="0.000791683420304033" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000029"  value="-0.00239489867205147" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000030"  value="0.000108484038853763" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000031"  pCol="P0000031"  value="0.0432798825205498" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000001"  value="-0.246572270428625" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000002"  value="-0.00160695698491223" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000003"  value="-0.000801251078066075" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000004"  value="-0.00672968696544766" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000005"  value="-0.00376803864978331" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000006"  value="-0.00112186240389315" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000007"  value="-0.00215204980680289" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000008"  value="-0.00305701210432143" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000009"  value="0.000708103945889545" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000010"  value="-0.00496101321812739" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000011"  value="-0.0113541328854144" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000012"  value="-0.000825148454157607" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000013"  value="-0.000630192094118136" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000014"  value="-0.00583297679795783" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000015"  value="6.87304603095692E-008" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000016"  value="-0.00697496093176459" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000017"  value="0.000848712832122637" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000018"  value="-0.000325093354112614" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000019"  value="0.00539162796359579" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000020"  value="-0.00989215894796205" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000021"  value="0.00573391179051291" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000022"  value="-0.0029556674940457" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000023"  value="0.000889497452267984" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000024"  value="-0.00159527934907602" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000025"  value="0.00049484380726722" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000026"  value="-0.000780718416773066" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000027"  value="0.0039055908380628" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000028"  value="0.00071591406618394" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000029"  value="0.117048451645331" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000030"  value="-0.000718773431639527" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000031"  value="0.000384849870037899" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000032"  pCol="P0000032"  value="0.211002506329044" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000001"  value="-0.258001161415192" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000002"  value="-0.00362540062063299" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000003"  value="-0.00133856770980659" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000004"  value="-0.00744422587297303" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000005"  value="-0.00591020379478119" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000006"  value="-0.0023818791838377" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000007"  value="-0.00448562960374229" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000008"  value="-0.00523731217021938" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000009"  value="0.0048719921045921" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000010"  value="-0.00497410050854295" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000011"  value="-0.0169365540637299" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000012"  value="-0.00339410989752558" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000013"  value="0.000704425911530571" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000014"  value="-0.00969142310372687" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000015"  value="2.07808439876735E-007" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000016"  value="-0.00560522082681236" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000017"  value="-0.00024038706777452" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000018"  value="-0.00115739150811236" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000019"  value="0.00390627363191571" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000020"  value="-0.011642582847928" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000021"  value="0.00110986772309533" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000022"  value="-0.00498988867518989" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000023"  value="-0.00239128802216464" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000024"  value="-0.000268600274742474" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000025"  value="0.0154124597031637" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000026"  value="0.0108030491713623" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000027"  value="0.013894159079457" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000028"  value="0.003030256638008" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000029"  value="0.121931660982012" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000030"  value="-0.00038621006562192" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000031"  value="-0.00280653089561877" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000032"  value="0.175018239863596" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000033"  pCol="P0000033"  value="0.190729296822228" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000001"  value="-0.346050403625814" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000002"  value="0.00957820870900672" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000003"  value="-0.00101850794408843" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000004"  value="-0.00144839144059795" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000005"  value="0.0084863777787168" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000006"  value="-0.00648550482974791" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000007"  value="-0.00656244818471144" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000008"  value="-0.00860770076434576" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000009"  value="0.00881975117969766" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000010"  value="0.0141908085174502" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000011"  value="0.00667924888353867" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000012"  value="0.0024854135709654" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000013"  value="0.0043164069872552" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000014"  value="0.00258184162501444" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000015"  value="1.2376385366091E-006" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000016"  value="-0.00167677055411271" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000017"  value="0.00117057494584372" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000018"  value="-0.000783325257583972" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000019"  value="-0.00643673467635167" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000020"  value="-0.0063397137827956" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000021"  value="0.00839192524401186" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000022"  value="0.00589355335819141" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000023"  value="0.00245208304539794" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000024"  value="-0.000523614319065034" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000025"  value="0.0029180079372687" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000026"  value="0.00837399284340523" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000027"  value="-0.00111790915721811" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000028"  value="-0.0035870753041741" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000029"  value="-0.0036053473084113" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000030"  value="8.50324098341116E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000031"  value="-0.00674425775346257" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000032"  value="-0.0141768972832698" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000033"  value="-0.00631786502293461" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000034"  pCol="P0000034"  value="0.382711493667403" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000001"  value="-0.120417114298778" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000002"  value="8.0377222989095E-006" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000003"  value="-0.00233643284888426" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000004"  value="0.00221398394942004" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000005"  value="-0.0120184777235242" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000006"  value="-0.0043793183124047" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000007"  value="-0.00177752097893245" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000008"  value="-0.00693166815629759" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000009"  value="0.0119616312194218" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000010"  value="0.000184597997421203" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000011"  value="-0.00918869385388042" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000012"  value="0.0053790138342934" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000013"  value="0.0026013001710221" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000014"  value="-0.00692107655024331" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000015"  value="1.48492288799142E-006" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000016"  value="0.00456875380013517" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000017"  value="0.00580017923402912" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000018"  value="-0.00458630873218868" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000019"  value="0.00653912337543791" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000020"  value="0.00587580703712275" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000021"  value="-0.00340845150558541" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000022"  value="0.00112939881733318" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000023"  value="-0.00109581029520539" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000024"  value="0.000453040492534051" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000025"  value="0.00273886733063928" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000026"  value="-0.000555258919525311" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000027"  value="0.00630336140051822" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000028"  value="-0.0013155228748242" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000029"  value="-0.0144695027079193" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000030"  value="2.72744290412254E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000031"  value="0.00066757952586026" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000032"  value="-0.015967154279868" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000033"  value="-0.0125660379564083" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000034"  value="-0.0142874496564586" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000035"  pCol="P0000035"  value="0.162406669280764" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000001"  value="-0.000279813831554849" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000002"  value="-5.0044132967053E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000003"  value="2.75287720653247E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000004"  value="3.23461996650386E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000005"  value="-8.74132902290763E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000006"  value="2.83364855021125E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000007"  value="1.64239390232176E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000008"  value="-0.000175725046019706" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000009"  value="0.000248340130979904" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000010"  value="0.000399120618423119" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000011"  value="0.000273039840791179" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000012"  value="0.00031022285026187" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000013"  value="0.000115937695808342" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000014"  value="0.000327258881587566" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000015"  value="-2.04855204717161E-007" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000016"  value="0.000109963234241114" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000017"  value="-3.29452361109279E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000018"  value="1.62126729959121E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000019"  value="0.000137973229314717" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000020"  value="0.000210032655463039" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000021"  value="8.3964000538499E-006" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000022"  value="-7.75614372512537E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000023"  value="-0.000247986152071465" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000024"  value="-0.000152745923569287" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000025"  value="3.94738562825144E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000026"  value="5.89784146591042E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000027"  value="0.000165833931398526" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000028"  value="-0.000129978002845613" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000029"  value="3.34305699649037E-006" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000030"  value="5.54266437688917E-006" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000031"  value="-4.69990276847081E-007" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000032"  value="-0.000365178195140659" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000033"  value="-0.000243215000246092" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000034"  value="-0.000332314864214996" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000035"  value="-7.00988154666551E-005" />
+			<PCovCell  tRow="1"  tCol="1"  pRow="P0000036"  pCol="P0000036"  value="8.12309645792245E-005" />
+		</PCovMatrix>
+		<ParamMatrix >
+			<PCell  targetCategory="1"  parameterName="P0000001"  beta="4.35393518722289"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000002"  beta="-1.73652313301529"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000003"  beta="-1.29890055053152"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000004"  beta="-0.73918397924442"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000005"  beta="-1.4733955089661"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000006"  beta="-1.31719097553673"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000007"  beta="-0.682605355243582"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000008"  beta="-0.503449468072982"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000009"  beta="0.119216585985714"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000010"  beta="-0.658808638977998"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000011"  beta="0.959872707793898"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000012"  beta="0.0661964214057075"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000013"  beta="0.264959734125847"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000014"  beta="-0.786424151035857"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000015"  beta="-8.71809909963772E-005"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000016"  beta="-0.950177964384775"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000017"  beta="-0.660315318451456"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000018"  beta="-0.540977607411563"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000019"  beta="0.267929622291465"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000020"  beta="-0.121389752836635"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000021"  beta="-0.446801624880679"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000022"  beta="-0.0362803949524758"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000023"  beta="0.560235955596284"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000024"  beta="-0.268439730265368"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000025"  beta="0.376117377420937"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000026"  beta="-0.339942117440132"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000027"  beta="-0.0715498551868715"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000028"  beta="-0.222366160692559"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000029"  beta="0.459802086707872"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000030"  beta="0.0138673514007032"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000031"  beta="0.51923661429073"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000032"  beta="0.719982512840866"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000033"  beta="0.200340248848879"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000034"  beta="-1.58897373720748"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000035"  beta="0.432570181823163"  df="1" />
+			<PCell  targetCategory="1"  parameterName="P0000036"  beta="-0.0282507924433178"  df="1" />
+		</ParamMatrix>
+	</GeneralRegressionModel>
+</PMML>
